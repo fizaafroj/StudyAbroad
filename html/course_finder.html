@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Your Program</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/course_finder.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Study Abroad</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/course_finder.html">Course Details</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/html/process.html">Application Process</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Find Your Program</h1>
+        
+        <div class="row">
+            <!-- Filter Sidebar -->
+            <div class="col-md-3">
+                <h5 class="fw-bold">Filter Results</h5>
+                <button class="btn btn-link text-decoration-none mb-2">Reset</button>
+                <div class="accordion" id="filters">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#areaOfStudy" aria-expanded="true">
+                                Area of Study
+                            </button>
+                        </h2>
+                        <div id="areaOfStudy" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="education">
+                                    <label for="education" class="form-check-label">Teaching & Education</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="business1">
+                                    <label for="business1" class="form-check-label">Business & Marketing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="healthcare">
+                                    <label for="healthcare" class="form-check-label">Healthcare & Nursing</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="engineering">
+                                    <label for="engineering" class="form-check-label">Engineering & Technology</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#degreeLevel" aria-expanded="true">
+                                Degree Level
+                            </button>
+                        </h2>
+                        <div id="degreeLevel" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="associate">
+                                    <label for="associate" class="form-check-label">Associate</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="bachelors">
+                                    <label for="bachelors" class="form-check-label">Bachelor's</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Program Cards -->
+            <div class="col-md-9">
+                <input type="text" class="form-control mb-3" placeholder="Search Programs">
+                <div class="row g-4">
+                    <!-- Sample Card -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/eng.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Engineering & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/phar.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Parmechy & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/arts.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Arts & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/eng.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Engineering & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/law.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Laws & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/eng.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Engineering & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/acounting.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Business & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/phar.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Medicine & Technology</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="/picture/acounting.jpg" class="card-img-top" alt="Cybersecurity">
+                            <div class="card-body">
+                                <h6 class="card-title text-uppercase text-primary fw-bold">Accounting & Business</h6>
+                                <p class="card-text">Bachelor of Science in <strong>Cybersecurity</strong></p>
+                                <button class="btn btn-primary w-100 mb-2">Apply Now</button>
+                                <button class="btn btn-outline-primary w-100">Request Info</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Duplicate the above card to create more -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Request Info Form -->
+        <div class="container mt-5 p-5 bg-dark text-white">
+            <h2 class="text-center mb-4">Request for Information</h2>
+            <form>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label">First Name *</label>
+                        <input type="text" class="form-control" id="firstName" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label">Last Name *</label>
+                        <input type="text" class="form-control" id="lastName" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone *</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <label for="degreeType" class="form-label">Degree Type *</label>
+                        <select class="form-select" id="degreeType" required>
+                            <option value="">Select Degree Type</option>
+                            <option value="bachelor">Bachelor's</option>
+                            <option value="master">Master's</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="areaOfStudy" class="form-label">Area of Study *</label>
+                        <select class="form-select" id="areaOfStudy" required>
+                            <option value="">Select Area of Study</option>
+                            <option value="engineering">Engineering</option>
+                            <option value="nursing">Nursing</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
